@@ -19,8 +19,8 @@ function User(props) {
     },[])
     return (
         <>
-            <div>{userInfo[0] !== undefined ? userInfo[0].postedBy : null}</div>
-            <div>
+            <div className="UserTitle">{userInfo[0] !== undefined ? userInfo[0].postedBy : null}</div>
+            <div className="Posts">
                 <h3>Posts:</h3>
                 {
                     userInfo.map(post => (
