@@ -14,7 +14,7 @@ server.use('/api/users', UsersRouter)
 server.use('/api/posts', PostsRouter)
 
 server.get('/', (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`);
+  res.send(`<h2>Let's write some middleware! Working on PORT ${process.env.PORT}</h2>`);
 });
 
 //custom middleware
